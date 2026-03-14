@@ -18,7 +18,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t vishalmath2605/crm-app:1.0 .'
+                sh 'docker build -t vishalmath2605/crm-app:1.0 -f docker/Dockerfile .'
             }
         }
 
@@ -31,5 +31,4 @@ pipeline {
     }
 
 }
-
 
